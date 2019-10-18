@@ -1,0 +1,29 @@
+body {
+    background-color: blue;
+}
+
+.main-container {
+    width: 800px;
+    height: 800px;
+    border: 5px solid rgb(57, 177, 67);
+    margin: 0 auto;
+    animation-name: main;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(17, 180, 66);
+    position: relative;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: box;
+}
+
+@keyframes box{
+    0%{left: 0; top: 0; border-radius: 0%}
+    25%{left: 75%; top: 0; border-radius: 10%}
+    50%{left: 75%; top: 75%; border-radius: 30%}
+    75%{left: 0; top: 75%; border-radius: 50%}
+    100%{left: 0; top: 0; border-radius: 0%}
+}
